@@ -1,0 +1,79 @@
+Configuration	Temperature_Final
+STM32CubeMX 	4.23.0
+Date	06/09/2018
+MCU	STM32F103ZETx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+ADC1	IN7	ADC1_IN7	PA7
+DAC	DAC_OUT1	DAC_OUT1	PA4
+DAC	DAC_OUT2	DAC_OUT2	PA5
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	OSC_OUT
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM2	Internal Clock	TIM2_VS_ClockSourceINT	VP_TIM2_VS_ClockSourceINT
+TIM3	Internal Clock	TIM3_VS_ClockSourceINT	VP_TIM3_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+1	PE2	GPIO_Output	INC_pwm
+2	PE3	GPIO_Output	UD_pwm
+23	OSC_IN	RCC_OSC_IN	
+24	OSC_OUT	RCC_OSC_OUT	
+40	PA4	DAC_OUT1	DAC_now
+41	PA5	DAC_OUT2	DAC_set
+43	PA7	ADC1_IN7	ADC_PID
+49	PF11	GPIO_Output	D/IO1
+53	PF13	GPIO_Output	B/IO2
+55	PF15	GPIO_Output	C/IO3
+56	PG0	GPIO_Output	DS18B20
+57	PG1	GPIO_Output	A/IO4
+59	PE8	GPIO_Output	IO5
+63	PE10	GPIO_Output	IO6
+65	PE12	GPIO_Output	IO7
+73	PB12	GPIO_EXTI12	up
+74	PB13	GPIO_EXTI13	down
+75	PB14	GPIO_EXTI14	weishu
+101	PA9	USART1_TX	
+102	PA10	USART1_RX	
+105	PA13	SYS_JTMS-SWDIO	
+109	PA14	SYS_JTCK-SWCLK	
+127	PG12	GPIO_Output	
+128	PG13	GPIO_Output	
+129	PG14	GPIO_Output	
+141	PE0	GPIO_Output	Cold_control
+142	PE1	GPIO_Output	CS_pwm
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Temperature_Final
+Project Folder : E:\stm32_project\Temperature_Final
+Toolchain / IDE : MDK-ARM V4
+Firmware Package Name and Version : STM32Cube FW_F1 V1.6.1
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
